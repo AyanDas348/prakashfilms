@@ -11,15 +11,15 @@ const Home = () => {
   // const isMobile = useMediaQuery('(max-width:600px)');
   return (
     <div className="flex flex-col gap-y-12">
-      <div className="lg:hidden">
+      {/* <div className="lg:hidden">
         <MobileHero />
-      </div>
-      <div className="lg:block hidden">
+      </div> */}
+      <div className="">
         <Hero />
       </div>
       <Trailers />
-      <About />
-      <Partners />
+      {/* <About /> */}
+      {/* <Partners /> */}
       <Distribution />
       <Production />
       <Events />

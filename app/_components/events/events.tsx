@@ -8,28 +8,28 @@ const Events = () => {
             <div className="flex w-full justify-start items-start px-3 mb-10 lg:px-12">
                 <h1 className="font-bold text-4xl flex w-full px-5 border-l border-black/50 uppercase">Events</h1>
             </div>
-            <Carousel className="hidden lg:flex h-40 items-center justify-center mx-20 my-8 pt-44">
+            <Carousel className="hidden lg:flex h-[500px] items-center justify-center mx-20 my-8 mt-20">
                 <CarouselContent>
                     <CarouselItem className="lg:basis-1/3">
-                        <Image src={'/assets/download.png'} width={800} height={500} alt="distibution" />
+                        <Image src={'/assets/distribution/download.jpg'} width={800} height={500} alt="distibution" />
                     </CarouselItem>
                     <CarouselItem className="lg:basis-1/3">
-                        <Image src={'/assets/download.png'} width={800} height={500} alt="distibution" />
+                        <Image src={'/assets/distribution/download.jpg'} width={800} height={500} alt="distibution" />
                     </CarouselItem>
                     <CarouselItem className="lg:basis-1/3">
-                        <Image src={'/assets/download.png'} width={800} height={500} alt="distibution" />
+                        <Image src={'/assets/distribution/download.jpg'} width={800} height={500} alt="distibution" />
                     </CarouselItem>
                     <CarouselItem className="lg:basis-1/3">
-                        <Image src={'/assets/download.png'} width={800} height={500} alt="distibution" />
+                        <Image src={'/assets/distribution/download.jpg'} width={800} height={500} alt="distibution" />
                     </CarouselItem>
                     <CarouselItem className="lg:basis-1/3">
-                        <Image src={'/assets/download.png'} width={800} height={500} alt="distibution" />
+                        <Image src={'/assets/distribution/download.jpg'} width={800} height={500} alt="distibution" />
                     </CarouselItem>
                     <CarouselItem className="lg:basis-1/3">
-                        <Image src={'/assets/download.png'} width={800} height={500} alt="distibution" />
+                        <Image src={'/assets/distribution/download.jpg'} width={800} height={500} alt="distibution" />
                     </CarouselItem>
                     <CarouselItem className="lg:basis-1/3">
-                        <Image src={'/assets/download.png'} width={800} height={500} alt="distibution" />
+                        <Image src={'/assets/distribution/download.jpg'} width={800} height={500} alt="distibution" />
                     </CarouselItem>
                     <CarouselItem className="lg:basis-1/3">
                         <Image src={'/assets/download.png'} width={800} height={500} alt="distibution" />
@@ -38,7 +38,7 @@ const Events = () => {
                 <CarouselPrevious />
                 <CarouselNext />
             </Carousel>
-            <button type="button" className="lg:hidden border px-6 py-4 rounded-xl mt-12 hover:bg-slate-400/30">
+            <button type="button" className="border px-6 py-4 rounded-xl mt-20 hover:bg-slate-400/30">
                 <Link href={'/events'}>View All</Link>
             </button>
         </div>

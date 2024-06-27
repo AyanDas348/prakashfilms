@@ -7,15 +7,16 @@ const VideoHero = () => {
     // const { header_title, header_content, typing_text } = header ?? {};
 
     const [index, setIndex] = useState(0);
+    const images = Array.from({ length: 3 }).map((_, i) => `/assets/hero/img-${i + 1}.jpg`)
 
     // Function to increment index every 5 seconds
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setIndex(prevIndex => (prevIndex + 1) % header_images.data.length);
-    //     }, 5000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex(prevIndex => (prevIndex + 1) % 3);
+        }, 10000);
 
-    //     return () => clearInterval(interval);
-    // }, [header_images]);
+        return () => clearInterval(interval);
+    }, []);
 
 
     // scroll to section
@@ -29,7 +30,7 @@ const VideoHero = () => {
             className="bg-img valign"
             style={{
                 position: "relative",
-                backgroundImage: `url('')`,
+                backgroundImage: `url(${images[index]})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 transition: "background-image 1s ease-in-out",
@@ -61,7 +62,7 @@ const VideoHero = () => {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    backgroundColor: "rgba(0, 0, 0, 0.1)", // Semi-transparent black
+                    backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent black
                     zIndex: 1, // Make sure it's above the background image
                 }}
             ></div>
@@ -76,7 +77,7 @@ const VideoHero = () => {
             >
                 <div className="row align-items-center h-100">
                     <div className="col-lg-8 col-md-10">
-                        <div className="caption hmone my-auto">
+                        {/* <div className="caption hmone my-auto">
                             <h5 className="thin text-white playfont">Latest</h5>
                             <TypeAnimation
                                 sequence={[
@@ -99,7 +100,7 @@ const VideoHero = () => {
                             >
                                 <span>Enquire Now</span>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

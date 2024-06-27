@@ -8,19 +8,21 @@ const Sidebar = () => {
             <div className="p-6">
                 <Image
                     alt="logo"
-                    src=""
+                    src={"/assets/logo.png"}
+                    width={50}
+                    height={50}
                 />
             </div>
             <div className="flex flex-col w-full">
-            <div className="flex flex-col w-full">
-            {navbarRoutes.map((route) => (
-                <SidebarItem
-                    key={route.href}
-                    label={route.title}
-                    href={route.href}
-                />
-            ))}
-        </div>
+                <div className="flex flex-col w-full">
+                    {navbarRoutes.map((route) => (
+                        <SidebarItem
+                            key={route.href}
+                            label={route.title}
+                            href={route.href}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );

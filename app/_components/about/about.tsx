@@ -10,7 +10,7 @@ const About = () => {
                 <p className="w-full mx-auto px-6 pt-12 text-justify">
                     A film distribution and production company based in Cuttack, Odisha was established in the year 2014 by Prashant Behera. Since its inception, Prakash Films has witnessed a steady growth in film distribution. As a leading film distribution and production enterprise headquartered in Odisha, Prakash Films also holds the distinction of being the first distribution house to have received the “Best Distribution Company” award by ETC Bollywood in the year 2016.
                 </p>
-                <span className="pt-12 justify-evenly w-full items-center flex gap-x-1">
+                <span className="pt-12 justify-start w-full items-start flex flex-col gap-x-1 gap-y-3">
                     <Image src={'/assets/icons8-film-reel-100.png'} alt="film-reel" width={50} height={50} />
                     <Image src={'/assets/icons8-film-reel-100.png'} alt="film-reel" width={50} height={50} />
                     <Image src={'/assets/icons8-film-reel-100.png'} alt="film-reel" width={50} height={50} />

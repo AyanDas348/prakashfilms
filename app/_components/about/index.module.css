@@ -1,0 +1,108 @@
+.about {
+    padding: 60px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collg5,
+.collg7 {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.collg5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.collg7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+    display: flex;
+    align-items: center;
+}
+
+.expimg {
+    position: relative;
+    overflow: hidden;
+}
+
+.bgimg {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 100%;
+    /* Aspect ratio */
+}
+
+.since,
+.years {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.years {
+    top: auto;
+    bottom: 10px;
+}
+
+.expcontent {
+    padding-left: 30px;
+}
+
+.subtitle {
+    color: #888;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.playfont {
+    font-family: 'Playfair Display', serif;
+}
+
+.numbers {
+    margin-top: 50px;
+}
+
+.numbers .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numbers .item {
+    margin-bottom: 30px;
+}
+
+.numbers h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.numbers h6 {
+    font-size: 18px;
+    color: #888;
+}
+
+.nbr {
+    font-weight: bold;
+}
